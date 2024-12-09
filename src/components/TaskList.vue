@@ -47,7 +47,7 @@ const getTaskClasses = (task) => {
 </script>
 
 <template>
-  <div class="space-y-6 p-6">
+  <div class="space-y-6 p-2 lg:p-6">
    
     <button
       class="w-full px-4 py-2 text-white bg-cyan-950 rounded-md font-semibold hover:bg-blue-600"
@@ -60,7 +60,7 @@ const getTaskClasses = (task) => {
     <form
       v-if="showForm"
       @submit.prevent="addTask"
-      class="flex space-x-4 bg-white p-4 rounded-md shadow-md"
+      class="flex space-x-1 lg:space-x-4 bg-white p-4 rounded-md shadow-md"
     >
       <input
         v-model="newTask"
